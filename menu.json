@@ -1,0 +1,134 @@
+{
+  "categories": [
+    {
+      "name": "Thick & Milk Shakes",
+      "sections": [
+        {
+          "title": "Chocolate Base",
+          "items": [
+            { "name": "Cold Coffee", "milk": 130, "thick": 170 },
+            { "name": "Chocolate Mud", "milk": 130, "thick": 160 },
+            { "name": "Hazelnut Coffee", "milk": 130, "thick": 165 },
+            { "name": "Cookie Deal", "milk": 135, "thick": 175 },
+            { "name": "Oreo Hazelnut", "milk": 140, "thick": 175 },
+            { "name": "Triple Choco Chip", "milk": 135, "thick": 170 },
+            { "name": "Hazelnut & Nuts", "milk": 145, "thick": 185 },
+            { "name": "Choco Brownie", "milk": 155, "thick": 190 },
+            { "name": "Caramel Coffee", "milk": 145, "thick": 185 },
+            { "name": "Kitkat Caramel", "milk": 165, "thick": 205 },
+            { "name": "Hazelnut Brownie", "milk": 160, "thick": 195 },
+            { "name": "Snickers Caramel", "milk": 170, "thick": 210 },
+            { "name": "Ferrero Rocher Hazelnut", "milk": 180, "thick": 220 },
+            { "name": "Ferrero Rocher", "milk": 195, "thick": 235 }
+          ]
+        },
+        {
+          "title": "Fruit Base",
+          "items": [
+            { "name": "Strawberry", "milk": 120, "thick": 180 },
+            { "name": "Mango", "milk": 140, "thick": 170 },
+            { "name": "Litchi Berry", "milk": 140, "thick": 170 },
+            { "name": "Litchi Treat", "milk": 130, "thick": 170 },
+            { "name": "Caramel Banana", "milk": 150, "thick": 170 }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Ice Cream Cakes",
+      "items": [
+        { "name": "Vanilla Bliss", "half": 600 },
+        { "name": "Strawberry Swirl", "half": 600 },
+        { "name": "Oreo Frost", "half": 650 },
+        { "name": "Butterscotch", "half": 650 },
+        { "name": "Biscoff", "half": 800 }
+      ]
+    },
+    {
+      "name": "Mocktails",
+      "items": [
+        { "name": "Litchi Mojito", "price": 90 },
+        { "name": "Green Apple", "price": 90 },
+        { "name": "Blue Lagoon", "price": 100 },
+        { "name": "Virgin Mojito", "price": 90 },
+        { "name": "Beach Sunset", "price": 105 }
+      ]
+    },
+    {
+      "name": "Natural Ice Cream",
+      "sections": [
+        {
+          "title": "Seasonal Fruit",
+          "items": [
+            { "name": "Alphonso Mango", "mini": 80, "family": 300 },
+            { "name": "Mango Twist", "mini": 80, "family": 300 },
+            { "name": "Mango Chilli", "mini": 80, "family": 300 },
+            { "name": "Mango Coconut", "mini": 80, "family": 300 },
+            { "name": "Watermelon", "mini": 80, "family": 300 },
+            { "name": "Strawberry", "mini": 80, "family": 300 },
+            { "name": "Sitaphal", "mini": 80, "family": 300 },
+            { "name": "Papaya Pineapple", "mini": 80, "family": 300 },
+            { "name": "Kala Jamoon", "mini": 80, "family": 300 },
+            { "name": "Muskmelon", "mini": 80, "family": 300 },
+            { "name": "Litchi", "mini": 80, "family": 300 },
+            { "name": "Jackfruit", "mini": 80, "family": 300 },
+            { "name": "Guava", "mini": 80, "family": 300 },
+            { "name": "Black Grapes", "mini": 80, "family": 300 },
+            { "name": "Tender Coconut", "mini": 80, "family": 300 },
+            { "name": "Chikoo", "mini": 80, "family": 300 },
+            { "name": "Kiwi", "mini": 80, "family": 300 },
+            { "name": "Pineapple Kaju", "mini": 80, "family": 300 }
+          ]
+        },
+        {
+          "title": "Dry Fruits",
+          "items": [
+            { "name": "Anjeer", "mini": 80, "family": 300 },
+            { "name": "Roasted Almonds", "mini": 80, "family": 300 },
+            { "name": "Kaju Kismis", "mini": 80, "family": 300 },
+            { "name": "Mixed Dry Fruit", "mini": 80, "family": 300 },
+            { "name": "Nuts & Dates", "mini": 80, "family": 300 }
+          ]
+        },
+        {
+          "title": "Special Flavours",
+          "items": [
+            { "name": "Paan", "mini": 80, "family": 300 },
+            { "name": "Choco Paan", "mini": 80, "family": 300 },
+            { "name": "Green Chilli", "mini": 80, "family": 300 },
+            { "name": "Red Chilli", "mini": 80, "family": 300 },
+            { "name": "Butterscotch", "mini": 80, "family": 300 },
+            { "name": "Honey", "mini": 80, "family": 300 },
+            { "name": "Gulkand", "mini": 80, "family": 300 },
+            { "name": "Vanilla", "mini": 80, "family": 300 },
+            { "name": "Kesar", "mini": 80, "family": 300 },
+            { "name": "Pineapple Kaju", "mini": 80, "family": 300 },
+            { "name": "Ice Apple", "mini": 80, "family": 300 },
+            { "name": "Black Currant", "mini": 80, "family": 300 }
+          ]
+        },
+        {
+          "title": "Chocolate",
+          "items": [
+            { "name": "Chocolate", "mini": 80, "family": 300 },
+            { "name": "White Choco Almond", "mini": 80, "family": 300 },
+            { "name": "Cookie & Cream", "mini": 80, "family": 300 },
+            { "name": "Choco Almond", "mini": 80, "family": 300 },
+            { "name": "Swiss Chocolate", "mini": 80, "family": 300 },
+            { "name": "Coffee Walnut", "mini": 80, "family": 300 },
+            { "name": "Choco Walnut", "mini": 80, "family": 300 },
+            { "name": "Madagascar", "mini": 80, "family": 300 }
+          ]
+        },
+        {
+          "title": "Sugar Free",
+          "items": [
+            { "name": "Tender Coconut", "mini": 80, "family": 300 },
+            { "name": "Mango", "mini": 80, "family": 300 },
+            { "name": "Chikoo", "mini": 80, "family": 300 }
+          ]
+        }
+      ]
+    }
+  ]
+}
