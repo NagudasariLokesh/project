@@ -1,7 +1,7 @@
 {
   "categories": [
     {
-      "name": "Thick & Milk Shakes",
+      "name": "Thick Shakes & Milk Shakes",
       "sections": [
         {
           "title": "Chocolate Base",
@@ -23,13 +23,32 @@
           ]
         },
         {
+          "title": "New Launch",
+          "items": [
+            { "name": "Belgian Dark Load", "milk": 0, "thick": 260 },
+            { "name": "Nutella Thick Shake", "milk": 0, "thick": 190 },
+            { "name": "Red Velvet", "milk": 0 , "thick": 210 }
+          ]
+        },
+        {
+          "title": "nut Base",
+          "items": [
+            { "name": "Peanut Butter", "milk": 130, "thick": 170 },
+            { "name": "Fig & Honey", "milk": 130, "thick": 170 },
+            { "name": "Choco Almond", "milk": 140, "thick": 170 },
+            { "name": "Dates & Nuts", "milk": 140, "thick": 200 },
+            { "name": "Caramel Brownie", "milk": 175, "thick": 215 },
+            { "name": "American Dry Fruit", "milk": 165, "thick": 205 }
+          ]
+        },
+        {
           "title": "Fruit Base",
           "items": [
-            { "name": "Strawberry", "milk": 120, "thick": 180 },
-            { "name": "Mango", "milk": 140, "thick": 170 },
+            { "name": "Strawberry", "milk": 120, "thick": 150 },
+            { "name": "Mango", "milk": 140, "thick": 180 },
             { "name": "Litchi Berry", "milk": 140, "thick": 170 },
             { "name": "Litchi Treat", "milk": 130, "thick": 170 },
-            { "name": "Caramel Banana", "milk": 150, "thick": 170 }
+            { "name": "Caramel Banana", "milk": 150, "thick": 190 }
           ]
         }
       ]
@@ -37,21 +56,31 @@
     {
       "name": "Ice Cream Cakes",
       "items": [
-        { "name": "Vanilla Bliss", "half": 600 },
-        { "name": "Strawberry Swirl", "half": 600 },
-        { "name": "Oreo Frost", "half": 650 },
-        { "name": "Butterscotch", "half": 650 },
-        { "name": "Biscoff", "half": 800 }
+        { "name": "Vanilla Bliss", "half": 600, "one": 900 },
+        { "name": "Strawberry Swirl", "half": 600, "one": 900 },
+        { "name": "Oreo Frost", "half": 650, "one": 900 },
+        { "name": "Butterscotch", "half": 650, "one": 950 },
+        { "name": "Choco Chip Fusion", "half": 650, "one": 900},
+        { "name": "Choco Nut Crumble", "half": 750, "one": 1150},
+        { "name": "Nutty Delight", "half": 750, "one": 1150},
+        { "name": "Honey Nut Crunch", "half": 750, "one": 1200},
+        { "name": "Caramel Almounds","half": 750, "one": 1200},
+        { "name": "Biscoff", "half": 800, "one": 1400 }
       ]
     },
     {
       "name": "Mocktails",
       "items": [
-        { "name": "Litchi Mojito", "price": 90 },
-        { "name": "Green Apple", "price": 90 },
-        { "name": "Blue Lagoon", "price": 100 },
-        { "name": "Virgin Mojito", "price": 90 },
-        { "name": "Beach Sunset", "price": 105 }
+        { "name": "Lemon Punch", "price": 95},
+        { "name": "Classic Mojito", "price": 95 },
+        { "name": "Ginger Twist", "price": 95 },
+        { "name": "Cindrella", "price": 105 },
+        { "name": "Sunny Fizz", "price": 105 },
+        { "name": "Berry Mojito", "price": 105},
+        { "name": "Deep Blue", "price": 105 },
+        { "name": "Orange Rock", "price": 105 },
+        { "name": "Beach Sunset", "price": 105 },
+        { "name": "Apple Mojito", "price": 105 }
       ]
     },
     {
@@ -64,6 +93,7 @@
             { "name": "Mango Twist", "mini": 80, "family": 300 },
             { "name": "Mango Chilli", "mini": 80, "family": 300 },
             { "name": "Mango Coconut", "mini": 80, "family": 300 },
+            { "name": "Mango Berry", "mini": 80, "family": 300 },
             { "name": "Watermelon", "mini": 80, "family": 300 },
             { "name": "Strawberry", "mini": 80, "family": 300 },
             { "name": "Sitaphal", "mini": 80, "family": 300 },
@@ -85,7 +115,7 @@
           "items": [
             { "name": "Anjeer", "mini": 80, "family": 300 },
             { "name": "Roasted Almonds", "mini": 80, "family": 300 },
-            { "name": "Kaju Kismis", "mini": 80, "family": 300 },
+            { "name": "Kaju Kismish", "mini": 80, "family": 300 },
             { "name": "Mixed Dry Fruit", "mini": 80, "family": 300 },
             { "name": "Nuts & Dates", "mini": 80, "family": 300 }
           ]
@@ -98,10 +128,10 @@
             { "name": "Green Chilli", "mini": 80, "family": 300 },
             { "name": "Red Chilli", "mini": 80, "family": 300 },
             { "name": "Butterscotch", "mini": 80, "family": 300 },
-            { "name": "Honey", "mini": 80, "family": 300 },
+            { "name": "Horlicks", "mini": 80, "family": 300 },
+            { "name": "Malai", "mini": 80, "family": 300 },
             { "name": "Gulkand", "mini": 80, "family": 300 },
-            { "name": "Vanilla", "mini": 80, "family": 300 },
-            { "name": "Kesar", "mini": 80, "family": 300 },
+            { "name": "PSG", "mini": 80, "family": 300 },
             { "name": "Pineapple Kaju", "mini": 80, "family": 300 },
             { "name": "Ice Apple", "mini": 80, "family": 300 },
             { "name": "Black Currant", "mini": 80, "family": 300 }
@@ -110,7 +140,7 @@
         {
           "title": "Chocolate",
           "items": [
-            { "name": "Chocolate", "mini": 80, "family": 300 },
+            { "name": "Chocobite", "mini": 80, "family": 300 },
             { "name": "White Choco Almond", "mini": 80, "family": 300 },
             { "name": "Cookie & Cream", "mini": 80, "family": 300 },
             { "name": "Choco Almond", "mini": 80, "family": 300 },
