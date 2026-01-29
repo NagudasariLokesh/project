@@ -1,39 +1,35 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <title>GATOX Ice Cream & Shakes Menu</title>
-
-    <!-- Mobile friendly -->
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <!-- Styles -->
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <title>GATOX Ice Cream & Shakes Menu</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-    <!-- Header -->
-    <h1>🍨 GATOX Ice Cream & Shakes Menu</h1>
+  <!-- HEADER WITH LOGO -->
+  <div class="header">
+    <img src="assets/gatox.jpeg" alt="GATOX Logo" class="logo">
+    <h1>MENU</h1>
+  </div>
 
-    <!-- Search Box -->
-    <div style="text-align:center; padding:10px;">
-        <input
-            type="text"
-            id="searchInput"
-            placeholder="Search items..."
-            oninput="searchMenu()"
-            style="padding:10px; width:90%; max-width:400px; border-radius:20px; border:none;"
-        />
-    </div>
+  <!-- SEARCH -->
+  <div id="searchArea">
+    <input
+      type="text"
+      id="searchInput"
+      placeholder="Search items..."
+      oninput="searchMenu()"
+    />
+  </div>
 
-    <!-- Category Buttons -->
-    <div id="categories"></div>
+  <!-- CATEGORIES -->
+  <div id="categories"></div>
 
-    <!-- Menu Items -->
-    <div id="menu"></div>
+  <!-- MENU / SEARCH RESULTS -->
+  <div id="menu"></div>
 
-    <!-- Script -->
-    <script src="script.js"></script>
-
+  <script src="script.js"></script>
 </body>
 </html>

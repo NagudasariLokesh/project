@@ -1,137 +1,6 @@
-{{
+{
   "categories": [
 
-    {
-      "name": "Milk Shakes",
-      "sections": [
-        {
-          "title": "Chocolate Base",
-          "items": [
-            { "name": "Cold Coffee", "price": 130 },
-            { "name": "Chocolate Mud", "price": 130 },
-            { "name": "Hazelnut Coffee", "price": 130 },
-            { "name": "Cookie Deal", "price": 135 },
-            { "name": "Oreo Hazelnut", "price": 140 },
-            { "name": "Triple Choco Chip", "price": 135 },
-            { "name": "Hazelnut & Nuts", "price": 145 },
-            { "name": "Choco Brownie", "price": 155 },
-            { "name": "Caramel Coffee", "price": 145 },
-            { "name": "Kitkat Caramel", "price": 165 },
-            { "name": "Hazelnut Brownie", "price": 160 },
-            { "name": "Snickers Caramel", "price": 170 },
-            { "name": "Ferrero Rocher Hazelnut", "price": 180 },
-            { "name": "Ferrero Rocher", "price": 195 }
-          ]
-        },
-        {
-          "title": "Nut Base",
-          "items": [
-            { "name": "Peanut Butter", "price": 130 },
-            { "name": "Fig & Honey", "price": 130 },
-            { "name": "Choco Almond", "price": 140 },
-            { "name": "Dates & Nuts", "price": 140 },
-            { "name": "Caramel Brownie", "price": 175 },
-            { "name": "American Dry Fruit", "price": 165 }
-          ]
-        },
-        {
-          "title": "Fruit Base",
-          "items": [
-            { "name": "Strawberry", "price": 120 },
-            { "name": "Mango", "price": 140 },
-            { "name": "Litchi Berry", "price": 140 },
-            { "name": "Litchi Treat", "price": 130 },
-            { "name": "Caramel Banana", "price": 150 }
-          ]
-        }
-      ]
-    },
-
-    {
-      "name": "Thick Shakes",
-      "sections": [
-        {
-          "title": "Chocolate Base",
-          "items": [
-            { "name": "Cold Coffee", "price": 170 },
-            { "name": "Chocolate Mud", "price": 160 },
-            { "name": "Hazelnut Coffee", "price": 165 },
-            { "name": "Cookie Deal", "price": 175 },
-            { "name": "Oreo Hazelnut", "price": 175 },
-            { "name": "Triple Choco Chip", "price": 170 },
-            { "name": "Hazelnut & Nuts", "price": 185 },
-            { "name": "Choco Brownie", "price": 190 },
-            { "name": "Caramel Coffee", "price": 185 },
-            { "name": "Kitkat Caramel", "price": 205 },
-            { "name": "Hazelnut Brownie", "price": 195 },
-            { "name": "Snickers Caramel", "price": 210 },
-            { "name": "Ferrero Rocher Hazelnut", "price": 220 },
-            { "name": "Ferrero Rocher", "price": 235 }
-          ]
-        },
-        {
-          "title": "New Launch",
-          "items": [
-            { "name": "Belgian Dark Load", "price": 260 },
-            { "name": "Nutella Thick Shake", "price": 190 },
-            { "name": "Red Velvet", "price": 210 }
-          ]
-        },
-        {
-          "title": "Nut Base",
-          "items": [
-            { "name": "Peanut Butter", "price": 170 },
-            { "name": "Fig & Honey", "price": 170 },
-            { "name": "Choco Almond", "price": 170 },
-            { "name": "Dates & Nuts", "price": 200 },
-            { "name": "Caramel Brownie", "price": 215 },
-            { "name": "American Dry Fruit", "price": 205 }
-          ]
-        },
-        {
-          "title": "Fruit Base",
-          "items": [
-            { "name": "Strawberry", "price": 150 },
-            { "name": "Mango", "price": 180 },
-            { "name": "Litchi Berry", "price": 170 },
-            { "name": "Litchi Treat", "price": 170 },
-            { "name": "Caramel Banana", "price": 190 }
-          ]
-        }
-      ]
-    },
-
-    {
-      "name": "Ice Cream Cakes",
-      "items": [
-        { "name": "Vanilla Bliss", "half": 600, "one": 900 },
-        { "name": "Strawberry Swirl", "half": 600, "one": 900 },
-        { "name": "Oreo Frost", "half": 650, "one": 900 },
-        { "name": "Butterscotch", "half": 650, "one": 950 },
-        { "name": "Choco Chip Fusion", "half": 650, "one": 900 },
-        { "name": "Choco Nut Crumble", "half": 750, "one": 1150 },
-        { "name": "Nutty Delight", "half": 750, "one": 1150 },
-        { "name": "Honey Nut Crunch", "half": 750, "one": 1200 },
-        { "name": "Caramel Almounds", "half": 750, "one": 1200 },
-        { "name": "Biscoff", "half": 800, "one": 1400 }
-      ]
-    },
-
-    {
-      "name": "Mocktails",
-      "items": [
-        { "name": "Lemon Punch", "price": 95 },
-        { "name": "Classic Mojito", "price": 95 },
-        { "name": "Ginger Twist", "price": 95 },
-        { "name": "Cindrella", "price": 105 },
-        { "name": "Sunny Fizz", "price": 105 },
-        { "name": "Berry Mojito", "price": 105 },
-        { "name": "Deep Blue", "price": 105 },
-        { "name": "Orange Rock", "price": 105 },
-        { "name": "Beach Sunset", "price": 105 },
-        { "name": "Apple Mojito", "price": 105 }
-      ]
-    },
     {
       "name": "Natural Ice Cream",
       "sections": [
@@ -147,7 +16,7 @@
             { "name": "Strawberry", "mini": 80, "family": 300 },
             { "name": "Sitaphal", "mini": 80, "family": 300 },
             { "name": "Papaya Pineapple", "mini": 80, "family": 300 },
-            { "name": "Kala Jamoon", "mini": 80, "family": 300 },
+            { "name": "KalaJamoon", "mini": 80, "family": 300 },
             { "name": "Muskmelon", "mini": 80, "family": 300 },
             { "name": "Litchi", "mini": 80, "family": 300 },
             { "name": "Jackfruit", "mini": 80, "family": 300 },
@@ -202,12 +71,141 @@
         {
           "title": "Sugar Free",
           "items": [
-            { "name": "Tender Coconut", "mini": 80, "family": 300 },
-            { "name": "Mango", "mini": 80, "family": 300 },
-            { "name": "Chikoo", "mini": 80, "family": 300 }
+            { "name": "Tender Coconut sugar free", "mini": 80, "family": 300 },
+            { "name": "Mango sugar free", "mini": 80, "family": 300 },
+            { "name": "Chikoo sugar free", "mini": 80, "family": 300 }
           ]
         }
       ]
+    },
+    {
+      "name": "Thick Shakes",
+      "sections": [
+        {
+          "title": "Fruit Base",
+          "items": [
+            { "name": "Strawberry", "price": 150 },
+            { "name": "Mango", "price": 180 },
+            { "name": "Litchi Berry", "price": 170 },
+            { "name": "Litchi Treat", "price": 170 },
+            { "name": "Caramel Banana", "price": 190 }
+          ]
+        },
+        {
+          "title": "Nut Base",
+          "items": [
+            { "name": "Peanut Butter", "price": 170 },
+            { "name": "Fig & Honey", "price": 170 },
+            { "name": "Choco Almond", "price": 170 },
+            { "name": "Dates & Nuts", "price": 200 },
+            { "name": "Caramel Brownie", "price": 215 },
+            { "name": "American Dry Fruit", "price": 205 }
+          ]
+        },
+        {
+          "title": "Chocolate Base",
+          "items": [
+            { "name": "Cold Coffee", "price": 170 },
+            { "name": "Chocolate Mud", "price": 160 },
+            { "name": "Hazelnut Coffee", "price": 165 },
+            { "name": "Cookie Deal", "price": 175 },
+            { "name": "Oreo Hazelnut", "price": 175 },
+            { "name": "Triple Choco Chip", "price": 170 },
+            { "name": "Hazelnut & Nuts", "price": 185 },
+            { "name": "Choco Brownie", "price": 190 },
+            { "name": "Caramel Coffee", "price": 185 },
+            { "name": "Kitkat Caramel", "price": 205 },
+            { "name": "Hazelnut Brownie", "price": 195 },
+            { "name": "Snickers Caramel", "price": 210 },
+            { "name": "Ferrorocher Hazelnut", "price": 220 },
+            { "name": "Ferrero Rocher", "price": 235 }
+          ]
+        },
+        {
+          "title": "New Launch",
+          "items": [
+            { "name": "Belgian Dark Load", "price": 260 },
+            { "name": "Nutella Thick Shake", "price": 190 },
+            { "name": "Red Velvet", "price": 210 }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Milk Shakes",
+      "sections": [
+        {
+          "title": "Fruit Base",
+          "items": [
+            { "name": "Strawberry", "price": 120 },
+            { "name": "Mango", "price": 140 },
+            { "name": "Litchi Berry", "price": 140 },
+            { "name": "Litchi Treat", "price": 130 },
+            { "name": "Caramel Banana", "price": 150 }
+          ]
+        },
+        {
+          "title": "Nut Base",
+          "items": [
+            { "name": "Peanut Butter", "price": 130 },
+            { "name": "Fig & Honey", "price": 130 },
+            { "name": "Choco Almond", "price": 140 },
+            { "name": "Dates & Nuts", "price": 160 },
+            { "name": "Caramel Brownie", "price": 175 },
+            { "name": "American Dry Fruit", "price": 165 }
+          ]
+        },
+        {
+          "title": "Chocolate Base",
+          "items": [
+            { "name": "Cold Coffee", "price": 130 },
+            { "name": "Chocolate Mud", "price": 130 },
+            { "name": "Hazelnut Coffee", "price": 130 },
+            { "name": "Cookie Deal", "price": 135 },
+            { "name": "Oreo Hazelnut", "price": 140 },
+            { "name": "Triple Choco Chip", "price": 135 },
+            { "name": "Hazelnut & Nuts", "price": 145 },
+            { "name": "Choco Brownie", "price": 155 },
+            { "name": "Caramel Coffee", "price": 145 },
+            { "name": "Kitkat Caramel", "price": 165 },
+            { "name": "Hazelnut Brownie", "price": 160 },
+            { "name": "Snickers Caramel", "price": 170 },
+            { "name": "Ferrorocher Hazelnut", "price": 180 },
+            { "name": "Ferrero Rocher", "price": 195 }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Mocktails",
+      "items": [
+        { "name": "Lemon Punch", "price": 95 },
+        { "name": "Classic Mojito", "price": 95 },
+        { "name": "Ginger Twist", "price": 95 },
+        { "name": "Cindrella", "price": 105 },
+        { "name": "Sunny Fizz", "price": 105 },
+        { "name": "Berry Mojito", "price": 105 },
+        { "name": "Deep Blue", "price": 105 },
+        { "name": "Orange Rock", "price": 105 },
+        { "name": "Beach Sunset", "price": 105 },
+        { "name": "Apple Mojito", "price": 105 }
+      ]
+    },
+    {
+      "name": "Ice Cream Cakes",
+      "items": [
+        { "name": "Vanilla Bliss", "half": 600, "one": 900 },
+        { "name": "Strawberry Swirl", "half": 600, "one": 900 },
+        { "name": "Oreo Frost", "half": 650, "one": 900 },
+        { "name": "Butterscotch", "half": 650, "one": 950 },
+        { "name": "Choco Chip Fusion", "half": 650, "one": 990 },
+        { "name": "Choco Nut Crumble", "half": 750, "one": 1150 },
+        { "name": "Nutty Delight", "half": 750, "one": 1150 },
+        { "name": "Honey Nut Crunch", "half": 750, "one": 1200 },
+        { "name": "Caramel Almounds", "half": 750, "one": 1200 },
+        { "name": "Biscoff", "half": 800, "one": 1400 }
+      ]
     }
+
   ]
 }

@@ -1,89 +1,113 @@
-/* ---------- GLOBAL ---------- */
 body{
   margin:0;
-  font-family: "Segoe UI", Arial, sans-serif;
-
-  /* Smooth gradient + image */
-  background:
-    linear-gradient(
-      rgba(0,0,0,0.65),
-      rgba(0,0,0,0.85)
-    ),
-    url("images/bg-icecream.jpg");
-
-  background-size: cover;
-  background-position: center;
-  background-attachment: fixed;
-
-  color:white;
+  font-family:"Segoe UI", Arial, sans-serif;
+  background:#000;
+  color:#fff;
 }
 
-/* ---------- HEADER ---------- */
-h1{
-  background:rgba(0,0,0,0.7);
-  padding:16px;
+/* HEADER */
+.header{
   text-align:center;
-  color:#f9b532;
-  margin:0;
+  padding:18px 0 12px;
 }
 
-/* ---------- SEARCH BAR ---------- */
+.logo{
+  width:160px;
+  height:auto;
+  display:block;
+  margin:0 auto 8px;
+}
+
+h1{
+  margin:0;
+  font-size:36px;
+  color:#7CFC00;
+}
+
+/* SEARCH */
+#searchArea{
+  text-align:center;
+  padding:14px;
+}
+
 #searchInput{
   width:90%;
-  max-width:400px;
-  padding:12px 16px;
+  max-width:420px;
+  padding:14px 18px;
   border-radius:30px;
   border:none;
   outline:none;
   font-size:16px;
 }
 
-/* ---------- CATEGORIES ---------- */
+/* CATEGORIES */
 #categories{
   display:flex;
   flex-direction:column;
   align-items:center;
-  padding:10px;
   gap:12px;
+  padding:10px;
 }
 
-/* SAME WIDTH AS SEARCH BAR */
 #categories button{
   width:90%;
-  max-width:400px;
-
-  background:linear-gradient(135deg,#f9b233,#f9a602);
-  border:none;
+  max-width:420px;
   padding:14px;
   border-radius:30px;
-
+  border:none;
+  background:#dff5e1;
+  color:#0b4d1b;
   font-size:16px;
   font-weight:600;
   cursor:pointer;
-
-  transition: transform 0.2s ease, box-shadow 0.2s ease;
 }
 
-#categories button:hover{
-  transform:scale(1.03);
-  box-shadow:0 6px 15px rgba(0,0,0,0.4);
-}
-
-/* ---------- MENU ---------- */
+/* MENU */
 #menu{
-  padding:15px;
+  padding:14px;
 }
 
-/* ---------- ITEM CARD ---------- */
+#menu h2,
+#menu h3{
+  color:#7CFC00;
+}
+
+/* PRICE HEADER */
+.price-header{
+  display:flex;
+  justify-content:space-between;
+  margin:10px 6px;
+  font-weight:600;
+  color:#7CFC00;
+}
+
+.price-header .left{
+  flex:1;
+}
+
+.price-header .right{
+  width:160px;
+  display:flex;
+  justify-content:space-between;
+}
+
+/* ITEM ROW */
 .item{
   display:flex;
   justify-content:space-between;
-  align-items:center;
-
-  padding:12px;
-  background:rgba(34,34,34,0.85);
-  border-radius:10px;
+  padding:14px;
+  background:#111;
+  border-radius:12px;
   margin-bottom:10px;
+  border:1px solid #222;
+}
 
-  backdrop-filter: blur(4px);
+.item .name{
+  flex:1;
+}
+
+.item .prices{
+  width:160px;
+  display:flex;
+  justify-content:space-between;
 }

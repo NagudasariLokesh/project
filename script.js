@@ -1,95 +1,105 @@
-let menuData = null;
+let menuData;
 
 fetch("menu.json")
-  .then(res => res.json())
-  .then(data => {
-    menuData = data;
-    const categoriesDiv = document.getElementById("categories");
-    categoriesDiv.innerHTML = "";
-
-    data.categories.forEach(category => {
-      const btn = document.createElement("button");
-      btn.textContent = category.name;
-      btn.onclick = () => showCategory(category);
-      categoriesDiv.appendChild(btn);
-    });
+  .then(r => r.json())
+  .then(d => {
+    menuData = d;
+    loadCategories();
   });
 
-function showCategory(category) {
-  const menu = document.getElementById("menu");
-  document.getElementById("searchInput").value = "";
+function loadCategories(){
+  const c = document.getElementById("categories");
+  c.innerHTML = "";
+  c.style.display = "flex";
 
-  menu.innerHTML = `
-    <button onclick="goBack()" style="margin-bottom:15px;border:none;padding:10px 18px;border-radius:20px;cursor:pointer;">⬅ Back</button>
-    <h2>${category.name}</h2>
+  menuData.categories.forEach(cat=>{
+    const b = document.createElement("button");
+    b.textContent = cat.name;
+    b.onclick = ()=>openCategory(cat);
+    c.appendChild(b);
+  });
+}
+
+function openCategory(cat){
+  document.getElementById("categories").style.display="none";
+  document.getElementById("searchInput").value="";
+
+  const m = document.getElementById("menu");
+  m.innerHTML = `
+    <button onclick="goBack()" style="margin-bottom:14px;border:none;padding:10px 18px;border-radius:20px;">← Back</button>
+    <h2>${cat.name}</h2>
   `;
 
-  if (category.sections) {
-    category.sections.forEach(section => {
-      menu.innerHTML += `<h3>${section.title}</h3>`;
-      section.items.forEach(item => {
-        menu.innerHTML += renderItem(item);
-      });
+  if(cat.sections){
+    cat.sections.forEach(sec=>{
+      m.innerHTML += `<h3>${sec.title}</h3>`;
+      addPriceHeader(m, sec.items[0]);
+      sec.items.forEach(i=>m.innerHTML+=renderItem(i));
     });
-  } else {
-    category.items.forEach(item => {
-      menu.innerHTML += renderItem(item);
-    });
+  }else{
+    addPriceHeader(m, cat.items[0]);
+    cat.items.forEach(i=>m.innerHTML+=renderItem(i));
   }
 }
 
-function renderItem(item) {
-  let price = "";
+function addPriceHeader(m,item){
+  let a,b;
+  if(item.milk!==undefined){a="Milk";b="Thick";}
+  else if(item.half!==undefined){a="½ KG";b="1 KG";}
+  else if(item.mini!==undefined){a="Mini";b="Family";}
+  else return;
 
-  if (item.milk !== undefined && item.thick !== undefined) {
-    price = `Milk ₹${item.milk} | Thick ₹${item.thick}`;
-  } else if (item.mini !== undefined && item.family !== undefined) {
-    price = `Mini ₹${item.mini} | Family ₹${item.family}`;
-  } else if (item.half !== undefined && item.one !== undefined) {
-    price = `½ KG ₹${item.half} | 1 KG ₹${item.one}`;
-  } else if (item.price !== undefined) {
-    price = `₹${item.price}`;
-  }
-
-  return `
-    <div class="item">
-      <span>${item.name}</span>
-      <span>${price}</span>
+  m.innerHTML+=`
+    <div class="price-header">
+      <div class="left"></div>
+      <div class="right">
+        <span>${a}</span>
+        <span>${b}</span>
+      </div>
     </div>
   `;
 }
 
-function searchMenu() {
-  const query = document.getElementById("searchInput").value.toLowerCase();
-  const menu = document.getElementById("menu");
+function renderItem(i){
+  let p="";
+  if(i.milk!==undefined)p=`<span>₹${i.milk}</span><span>₹${i.thick}</span>`;
+  else if(i.half!==undefined)p=`<span>₹${i.half}</span><span>₹${i.one}</span>`;
+  else if(i.mini!==undefined)p=`<span>₹${i.mini}</span><span>₹${i.family}</span>`;
+  else p=`<span>₹${i.price}</span>`;
 
-  if (!query) {
-    menu.innerHTML = "";
+  return `
+    <div class="item">
+      <span class="name">${i.name}</span>
+      <span class="prices">${p}</span>
+    </div>
+  `;
+}
+
+function searchMenu(){
+  const q=document.getElementById("searchInput").value.toLowerCase();
+  const m=document.getElementById("menu");
+  const c=document.getElementById("categories");
+
+  if(!q){
+    m.innerHTML="";
+    c.style.display="flex";
     return;
   }
 
-  menu.innerHTML = `<h2>Search Results</h2>`;
+  c.style.display="none";
+  m.innerHTML="<h2>Search Results</h2>";
 
-  menuData.categories.forEach(category => {
-    if (category.sections) {
-      category.sections.forEach(section => {
-        section.items.forEach(item => {
-          if (item.name.toLowerCase().includes(query)) {
-            menu.innerHTML += renderItem(item);
-          }
-        });
-      });
-    } else {
-      category.items.forEach(item => {
-        if (item.name.toLowerCase().includes(query)) {
-          menu.innerHTML += renderItem(item);
-        }
-      });
+  menuData.categories.forEach(cat=>{
+    const items=cat.sections?cat.sections.flatMap(s=>s.items):cat.items;
+    const f=items.filter(i=>i.name.toLowerCase().includes(q));
+    if(f.length){
+      addPriceHeader(m,f[0]);
+      f.forEach(i=>m.innerHTML+=renderItem(i));
     }
   });
 }
 
-function goBack() {
-  document.getElementById("menu").innerHTML = "";
-  document.getElementById("searchInput").value = "";
+function goBack(){
+  document.getElementById("menu").innerHTML="";
+  document.getElementById("categories").style.display="flex";
 }
